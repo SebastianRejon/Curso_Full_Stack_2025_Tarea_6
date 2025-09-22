@@ -11,6 +11,25 @@
 *{
   box-sizing: content-box;
 }
+.card{
+  padding: 5rem 0;
+  background-color: var(--card);
+  border: none;
+  transition: 0.4s;
+}
+.card:hover{
+  box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+  transition: 0.4s;
+}
 .card-text{
     min-height: 5rem;
+}
+.btn{
+  background-color: var(--atencion);
+  border: none;
+  transition: 0.4s;
+}
+.btn:hover{
+  background-color: var(--text-decorate);
+  transition: 0.4s;
 }
