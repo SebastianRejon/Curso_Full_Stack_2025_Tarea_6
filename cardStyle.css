@@ -1,0 +1,16 @@
+:root{
+    --bg: #ffffff;
+    --light-text: #ffffff;
+    --text-decorate: #89004f;
+    --decorate: #cfcfcf;
+    --text-night: #131313;
+    --atencion: #ff69b4;
+    --llamada: #c33b80;
+    --card: #ffe0ff;
+}
+*{
+  box-sizing: content-box;
+}
+.card-text{
+    min-height: 5rem;
+}
