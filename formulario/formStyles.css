@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --bg: #ffffff;
+    --light-text: #ffffff;
+    --text-decorate: #89004f;
+    --decorate: #cfcfcf;
+    --text-night: #131313;
+    --atencion: #ff69b4;
+    --llamada: #c33b80;
+    --card: #ffe0ff;
+}
+.row{
+  background-color: var(--atencion);
+}
+.form-control {
+  border: 2px solid var(--text-decorate);
+  border-radius: 0.35rem;
+  padding: 0.5rem 0;
+  transition: border-color 0.4s;
+}
+
+.btn-custom {
+  background-color: var(--llamada);
+  color:var(--bg);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 0.35rem;
+  font-size: 1rem;
+  transition: background-color 0.4s;
+}
+
+.btn-custom:hover {
+  background-color: var(--bg);
+  border: 2px solid var(--llamada); 
+}
+/* clases modificadas - agregadas para modo oscuro y alertas */
+.especial{
+  margin:1rem 0;
+}
+.invalidoNombre{
+  display: none;
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  padding:0.5rem 0; 
+}
+.invalidoMensaje{
+  display: none;
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  padding:0.5rem 0; 
+}
+.invalidoCorreo{
+  display: none;
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  padding:0.5rem 0; 
+}
