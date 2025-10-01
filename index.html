@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <!--JAVASCRIPT-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <!--CSS-->
+      <link rel="stylesheet" href="./src/assets/styles/style.css">
+      <!--LIBRERÍA DE ÍCONOS-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Tienda Oli</title>
+</head>
+<body>
+  <!--HEADER-NAV-->
+    <header>
+     <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img  class="rounded-circle ml-lg-1" src="./src/assets/img/logoOli.jpg" alt="logo" style="width: 40px;">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#hero">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#nosotros">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./categorias.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal" id="carritoCompras">🛒</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="login">
+        <button class="btn btn-outline-success" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    </header>
+
+    <main>
+
+      <!--HERO-->
+      <section class="text-center pb-5 hero" id="hero">
+        <div class="container">
+            <h1 class="mt-5 title">Indumentaria que se adapta a tu estilo</h1>
+        </div>
+
+        <div class="mt-4">
+            <!-- Párrafos con espacio reducido -->
+            <p class="lead mb-0 text">Prendas cómodas, modernas y versátiles para que te sientas bien todos los días.</p>
+             <!-- Botón con relleno y tamaño de letra personalizado -->
+            <a class="btn btn-primary btn-lg py-3 px-5 mt-4 mb-4" style="font-size: 0.9rem;" href="#" role="button">Ver más</a>
+
+            <!-- Contenedor para la imagen, usando un sistema de cuadrícula de Bootstrap -->
+            <div class="row justify-content-center mt-4">
+                <div class="col-12 col-md-8 col-lg-8">
+                    <img src="./src/assets/img/hero/atencion.jpg" alt="Imagen de muestra" class="img-fluid rounded inicio">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--NOSOTROS-->
+    <section class="mt-5" id="nosotros">
+      <div class="container text-center nosotros">
+        <h3>Potencia tu compra con nosotros</h3>
+        <p>Realiza tus compras con la mejor atención personalizada. Adquirí los productos recién ingresados y conoce nuestras novedades.</p>
+      </div>
+      <div class="container-fluid">
+  <div class="row align-items-center">
+    <div class="col">
+      <img class="rounded mx-auto d-block" src="./src/assets/img/nosotros/product.png" alt="">
+    </div>
+    <div class="col lign-self-center">
+      <div class="d-flex flex-column mb-3 mt-5">
+  <div class="p-2 texto">
+    <p class="text-start descripcion"><i class="fa-solid fa-cart-shopping"></i> Atención única</p>
+    <p class="text-start">Viví una experiencia de compra personalizada.</p>
+  </div>
+  <div class="p-2 texto">
+    <p class="text-start descripcion"><i class="fa-solid fa-store"></i> Lo último en productos</p>
+    <p class="text-start">Se el primero en descubrir novedades recién llegadas.</p>
+  </div>
+  <div class="p-2 texto">
+    <p class="text-start descripcion"><i class="fa-solid fa-heart"></i> Sorpresas cada mes</p>
+    <p class="text-start">Un catalógo que siempre se renueva para vos.</p>
+  </div>
+</div>
+    </div>
+    
+  </div>
+</div>
+    </section>
+
+     <!--CATEGORIAS-->
+     <section class="categorias mt-5 pt-4" id="productos">
+       <div class="container-fluid m-2">
+        <div class="row align-items-center pb-3">
+            <h2 class="text-center title-categori">Conocé Tienda Oli</h2>
+            <p class="fs-5 text-center">Calidad, novedades y atención exclusiva.</p>
+        </div>
+        <div class="row align-items-center justify-content-around">
+            <div class="card text-center mb-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Mujeres</h5>
+                    <p class="card-text">
+                        Productos recien ingresados y colecciones seleccionadas para que encuentres tendencia.
+                    </p>
+                    <a href="./categorias.html" class="btn btn-primary mb-2">Comenzar</a>
+                    <img src="./src/assets/img/hero/moda1.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+                        <div class="card text-center mb-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Abrigos</h5>
+                    <p class="card-text mb-3">
+                        Encontra los mejores abrigos, con diseños exclusivos y pensados para acada ocasión.
+                    </p>
+                    <a href="./categorias.html" class="btn btn-primary mb-2">Empezar</a>
+                    <img src="./src/assets/img/hero/ultimo.jpg" class="card-img-top" alt="...">
+                </div>
+            </div>
+                        <div class="card text-center mb-2" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Hombres</h5>
+                    <p class="card-text mb-3">
+                        Los diseños únicos, comodos y vanguardistas te estan esperando en nuestro catálogo.
+                    </p>
+                    <a href="./categorias.html" class="btn btn-primary mb-2">Empezar</a>
+                    <img src="./src/assets/img/hero/moda2.jpg" class="card-img-top">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+     </section>
+     <section>
+              <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Carrito de Compras</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Finalizar Compra</button>
+              </div>
+            </div>
+          </div>
+        </div>
+     </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="container-fluid mt-5 pt-4">
+      <div class="container text-start">
+  <div class="row align-items-start">
+    <div class="col uno list-group">
+      <p class="title-footer">#Tienda Oli</p>
+      <p>Home</p>
+      <p>Nosotros</p>
+      <p>Productos</p>
+    </div>
+    <div class="col tres list-group">
+      <p class="title-footer">Local</p>
+      <p>Ubicación</p>
+      <p>Medios de pago</p>
+      <p>Contacto</p>
+    </div>
+    <div class="col cuatro ">
+      Calle falsa - Misiones
+    </div>
+    <div class="col cinco">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+  </div>
+</div>
+      <p class="text-center mt-3">Todos los derechos reservados - Hecho con 💗</p>
+    </footer>
+</body>
+  <script src="carrito.js"></script>
+</html>
