@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+     <!--JAVASCRIPT-->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="./src/assets/styles/contacto.css">
+      <!--LIBRERÍA DE ÍCONOS-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Categoria</title>
+</head>
+<body>
+  <header>
+     <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <img  class="rounded-circle ml-lg-1" src="./src/assets/img/logoOli.jpg" alt="logo" style="width: 40px;">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./categorias.html">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#redes">Redes</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="login">
+        <button class="btn btn-outline-success" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    </header>
+<main class="container-fluid">
+  <!--formulario-->
+      <div class="row">
+      <div class="col">
+  <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6 formulario">
+          <div class="card shadow-lg">
+            <div class="card-body pt-4">
+              <h2 class="h4 mb-3 text-center especial">Formulario de Contacto</h2>
+              <form id="contactForm" novalidate>
+                <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" id="nombre" name="nombre"
+                placeholder="Tu nombre">
+                <div class="invalidoNombre" id="invalidoNombre"></div>
+              </div>
+              
+              <div class="mb-3">
+                <input type="email" class="form-control form-control-lg" id="email" name="email"
+                placeholder="tu@ejemplo.com">
+                <div class="invalidoCorreo"></div>
+              </div>
+              
+              <div class="mb-3">
+                <textarea class="form-control form-control-lg" id="mensaje" name="mensaje" rows="4"
+                placeholder="Escribí tu mensaje..."></textarea>
+                <div class="invalidoMensaje" id="invalidoMensaje"></div>
+              </div>
+              
+              <div class="d-grid">
+                <button type="submit" class="btn btn-custom btn-lg">Enviar</button>
+                <div id="successMessage" class="alert alert-success mt-3 d-none" role="alert">Mensaje enviado Correctamente</div>
+                
+              </div>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+      </div>
+      <div class="col container py-5">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53575.21577163313!2d-60.69425030215596!3d-32.93910067448205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab1f2b80514b%3A0x5c23f52575ff58b1!2sCamilo%20caf%C3%A9%20artesanal!5e0!3m2!1ses-419!2sar!4v1758684416089!5m2!1ses-419!2sar" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+</main>
+    
+    <!--footer-->
+    <footer class="container-fluid mt-5 pt-4">
+      <div class="container text-start">
+  <div class="row align-items-start footer">
+    <div class="col uno list-group">
+      <p class="title-footer">#Tienda Oli</p>
+      <p>Home</p>
+      <p>Nosotros</p>
+      <p>Productos</p>
+    </div>
+    <div class="col tres list-group">
+      <p class="title-footer">Local</p>
+      <p>Ubicación</p>
+      <p>Medios de pago</p>
+      <p>Contacto</p>
+    </div>
+    <div class="col cuatro ">
+      Calle falsa - Misiones
+    </div>
+    <div class="col cinco" id="redes">
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-tiktok"></i>
+      <i class="fa-brands fa-facebook"></i>
+    </div>
+  </div>
+</div>
+      <p class="text-center mt-3">Todos los derechos reservados - Hecho con 💗</p>
+    </footer>
+    <script src="./validacion.js"></script>
+</body>
+</html>

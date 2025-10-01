@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-principal: 'Roboto';
+    --font-especial: 'Dancing Script';
+    --light-text: #ffffff;
+    --text-decorate: #89004f;
+    --decorate: #cfcfcf;
+    --text-night: #131313;
+    --atencion: #ff69b4;
+    --llamada: #c33b80;
+    --card: #fce9fc;
+    --bg-nav: rgba(248, 243, 243, 0.8);
+}
+
+body{
+    font-family: var(--font-principal);
+}
+
+.navbar{
+    background-color: var(--bg-nav);
+}
+
+.navbar-brand{
+    font-family: 'Dancing Script';
+}
+
+ .navbar-nav .nav-link {
+     border-radius: 8px;
+    padding: 6px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn{
+    background-color: var(--text-decorate);
+    color: var(--light-text);
+    font-weight: 500;
+    border-color: var(--atencion);
+}
+
+.btn:hover{
+    background-color: var(--llamada);
+    border-color: var(--text-decorate);
+    color: var(--light-text);
+}
+
+
+/*formulario*/
+.row{
+  background-color: var(--card);
+}
+
+.formulario{
+    width: 400px;
+}
+
+.form-control {
+  border: 2px solid var(--llamada);
+  border-radius: 0.35rem;
+  padding: 0.5rem 0;
+  transition: border-color 0.4s;
+}
+/* clases modificadas - agregadas para modo oscuro y alertas */
+.especial{
+  margin:1rem 0;
+}
+.invalidoNombre{
+  display: none;
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  padding:0.5rem 0; 
+}
+.invalidoMensaje{
+  display: none;
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  padding:0.5rem 0; 
+}
+.invalidoCorreo{
+  display: none;
+  color: red;
+  font-size: 1rem;
+  text-align: center;
+  padding:0.5rem 0; 
+}
+
+
+/*footer*/
+
+footer, .footer{
+    background-color: var(--atencion);
+    color: var(--light-text);
+}
+
+.title-footer{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+p{
+    font-size: 14px;
+}

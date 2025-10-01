@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --font-principal: 'Roboto';
+    --font-especial: 'Dancing Script';
+    --light-text: #ffffff;
+    --text-decorate: #89004f;
+    --decorate: #cfcfcf;
+    --text-night: #131313;
+    --atencion: #ff69b4;
+    --llamada: #c33b80;
+    --card: #fce9fc;
+    --bg-nav: rgba(248, 243, 243, 0.8);
+}
+
+body{
+    font-family: var(--font-principal);
+}
+
+.hero{
+    background: url(../img/hero/fondo-de-textura-de-acuarela.jpg);
+    object-fit: cover;
+    position: relative;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.hero::after{
+    position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  content: '';
+}
+
+.navbar{
+    background-color: var(--bg-nav);
+}
+
+.navbar-brand{
+    font-family: 'Dancing Script';
+}
+
+ .navbar-nav .nav-link {
+     border-radius: 8px;
+    padding: 6px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn{
+    background-color: var(--text-decorate);
+    color: var(--light-text);
+    font-weight: 500;
+    border-color: var(--atencion);
+}
+
+.btn:hover{
+    background-color: var(--llamada);
+    border-color: var(--text-decorate);
+}
+
+.title{
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: var(--light-text);
+}
+
+.text{
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-weight: 600;
+}
+
+.hero, .text, .title, .btn, .inicio{
+    position: relative;
+    z-index: 1;
+}
+
+/*nosotros*/
+.nosotros h3{
+    font-weight: 700;
+}
+
+.nosotros p{
+    font-weight: 600;
+}
+
+.texto p{
+    font-weight: 400;
+}
+
+.texto .descripcion{
+    font-weight: 700;
+}
+
+.texto i{
+    color: var(--text-decorate);
+}
+
+/*categoria*/
+.title-categori{
+    font-family: var(--font-especial);
+    font-weight: 800;
+    font-size: 3.2rem;
+}
+
+.card{
+  padding: 1.5rem 0;
+  background-color: var(--card);
+  border: none;
+  transition: 0.4s;
+  margin: 1rem;
+}
+.card:hover{
+  box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.75);
+  transition: 0.4s;
+}
+.card-text{
+    min-height: 5rem;
+}
+
+.card-title{
+    font-family: var(--font-especial);
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.card-img-top{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+.btn{
+  background-color: var(--atencion);
+  border: none;
+  transition: 0.4s;
+}
+.btn:hover{
+  background-color: var(--text-decorate);
+  transition: 0.4s;
+}
+
+/*footer*/
+
+footer{
+    background-color: var(--atencion);
+    color: var(--light-text);
+}
+
+.title-footer{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+p{
+    font-size: 14px;
+}
